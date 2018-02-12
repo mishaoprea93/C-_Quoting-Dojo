@@ -1,0 +1,14 @@
+<h1>Here are the awsome quotes!</h1>
+<br>
+<br> @foreach(var objects in ViewBag.quotes){var count=0;
+<h5>"@objects["quote"]"</h5>
+<h5 class="merge"> -Added by @objects["name"] on @objects["created_at"]</h5>
+<h3>---------------------------------</h3>
+}
+
+
+<style>
+    .merge {
+        margin-left: 100px;
+    }
+</style>
